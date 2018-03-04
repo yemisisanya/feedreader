@@ -37,8 +37,8 @@ $(function() {
 
                 expect(allFeeds[i].url).toBeDefined();
                 expect(allFeeds[i].url).not.toBe('');
-            }
-        })
+            };
+        });
 
 
 
@@ -50,8 +50,8 @@ $(function() {
             for (i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].name).toBeDefined();
                 expect(allFeeds[i].name).not.toBe('');
-            }
-        })
+            };
+        });
     });
 
 
@@ -79,7 +79,7 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toBe(false);
             $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(true);
-        })
+        });
     });
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function() {
@@ -95,15 +95,15 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, function() {
                 done();
-            })
+            });
 
-        })
+        });
 
         it('has atleast one entry', function() {
 
             expect($('.feed').length).toBeGreaterThan(0);
 
-        })
+        });
 
         /* TODO: Write a new test suite named "New Feed Selection" */
         /* TODO: Write a test that ensures when a new feed is loaded
@@ -119,9 +119,9 @@ $(function() {
                     feed = $('.feed').html();
                     loadFeed(1, function() {
                         done();
-                    })
-                })
-            })
+                    });
+                });
+            });
             //check that first feed does not equal second feed
             it('content changes', function() {
                 expect($('.feed').html()).not.toBe(feed);
