@@ -13,4 +13,4 @@ Initial Entries - It checks to see that atleast one entry is displayed.
 
 New Feed Selection - It checks to see that feed content changes when a new feed is selected. 
 
-To view the feedreader project, please click [here](https://yemisisanya.github.io/feedreader/index.html).
+To view the feedreader project, please click [here](https://yemisisanya.github.io/feedreader/index.html)
